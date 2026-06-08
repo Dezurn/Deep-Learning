@@ -2,12 +2,12 @@
 
 ### Исходные признаки
 
-| Feature | Description |
+| Признак | Описание |
 |----------|-------------|
-| sample_id | Unique product identifier |
-| catalog_content | Product title and description |
-| image_link | URL to product image |
-| price | Target variable (product price) |
+| sample_id | Идентивификатор товара |
+| catalog_content | Текстовое описание товара |
+| image_link | Ссылка на картинку товара |
+| price | Цена товара (целевая переменная) |
 
 ---
 
