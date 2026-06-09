@@ -13,6 +13,7 @@
 Новые признаки были получены путем вытаскивания информации из признака catalog_content при помощи регулярных выражений. Для этого были использованы данные статьи: 
 - [Работа в pandas с регуляркой](https://docs-python.ru/packages/modul-pandas-analiz-dannykh-python/ispolzovanie-reguliarnykh-vyrazhenii/)
 - [Регулярка в питоне](https://habr.com/ru/articles/349860/)
+
 а также был использован сайт [regex101](https://regex101.com) для проверки работы регулярных выражений
 
 Преобразование признаков можно посмотреть в файле feature_extraction_train.ipynb
