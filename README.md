@@ -114,11 +114,11 @@
 │   ├── extracted
 │   │   ├── train_extracted.csv
 │   │   ├── test_extracted.csv
-│   │   ├── train_for_images.csv
-│   │   └── test_for_images.csv
 │   ├── for_models
 │   │   ├── train_model_ready.csv
-│   │   └── test_model_ready.csv
+│   │   ├── test_model_ready.csv
+│   │   ├── train_for_images.csv
+│   │   └── test_for_images.csv
 │   └── images
 │       ├── train
 │       └── test
