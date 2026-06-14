@@ -16,6 +16,11 @@
 
 ## Данные
 
+Исходные данные взяты из соревнования Amazon ML Challenge 2025:
+
+- `data/raw/train.csv` - обучающая выборка;
+- `data/raw/test.csv` - тестовая выборка.
+
 ### Извлечение признаков
 
 Новые признаки были получены путем вытаскивания информации из признака catalog_content при помощи регулярных выражений. Для этого были использованы данные статьи: 
@@ -107,37 +112,37 @@
 ```text
 .
 ├── README.md
+├── .gitignore
 ├── data
-│   ├── raw
-│   │   ├── train.csv
-│   │   └── test.csv
-│   ├── extracted
-│   │   ├── train_extracted.csv
-│   │   ├── test_extracted.csv
-│   ├── for_models
-│   │   ├── train_model_ready.csv
-│   │   ├── test_model_ready.csv
-│   │   ├── train_for_images.csv
-│   │   └── test_for_images.csv
-│   └── images
-│       ├── train
-│       └── test
+│   ├── raw                 
+│   ├── extracted           
+│   └── for_models        
+│ 
 ├── models
+│   └── mlp                
 ├── notebooks
-│   ├── EDA.ipynb
+│   ├── GP_5_DL.ipynb      
+│   ├── EDA.ipynb           
 │   ├── feature_extraction_train.ipynb
 │   ├── test_csv_generation.ipynb
 │   ├── image_csv_generation.ipynb
-│   ├── MLP.ipynb
-│   └── GP_5_DL.ipynb
-└── Графики
-    ├── spearman_corr.png
-    ├── kendall_corr.png
-    ├── pirson_corr.png
-    ├── Распределение по еде.png
-    ├── Распредление по товарному типу.png
-    └── Распредления по странам.png
-```
+│   ├── MLP.ipynb          
+│   └── ResNet18.ipynb     
+├── reports
+│   └── graphics            
+└── src
+    └── mlp_config.py       
+
+---
+
+## Порядок воспроизведения
+
+1. Загрузить исходные данные в `data/raw`.
+2. Запустить `notebooks/feature_extraction_train.ipynb` для извлечения признаков из тренировочной выборки.
+3. Запустить `notebooks/test_csv_generation.ipynb` для подготовки тестовой выборки.
+4. Запустить `notebooks/EDA.ipynb` для анализа и формирования тренировочной выборки к обучению моделей.
+5. Запустить `notebooks/MLP.ipynb` для обучения табличной нейросети.
+6. Запустить `notebooks/ResNet18.ipynb` для обучения модели на изображениях.
 
 ---
 
@@ -160,12 +165,9 @@
 
 ---
 
-## Источники проекта
+## Источники
 
-### Соревнование
-
-https://unstop.com/hackathons/crp-amazon-ml-challenge-2025-amazon-1560375
-
-### Исходные датасеты
-
-https://www.kaggle.com/datasets/suvroo/amazon-ml
+- Соревнование: https://unstop.com/hackathons/crp-amazon-ml-challenge-2025-amazon-1560375
+- Исходные датасеты: https://www.kaggle.com/datasets/suvroo/amazon-ml
+- Работа с регулярными выражениями в pandas: https://docs-python.ru/packages/modul-pandas-analiz-dannykh-python/ispolzovanie-reguliarnykh-vyrazhenii/
+- Регулярные выражения в Python: https://habr.com/ru/articles/349860/

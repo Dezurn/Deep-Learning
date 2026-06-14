@@ -1,5 +1,28 @@
-#Картинки
+# OS files
+.DS_Store
+
+# Python caches
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter and local runtime
+.jupyter/
+.ipython/
+*.log
+
+# Large data
 data/images/data/images_cache/
+
+
+# Experiment tracking and model outputs
 model_outputs/
 *.pt
 /data/images_cache/
