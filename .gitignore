@@ -1,2 +1,8 @@
 #Картинки
-data/images/
+data/images/data/images_cache/
+model_outputs/
+*.pt
+/data/images_cache/
+data/images_cache/**
+/model_outputs/
+model_outputs/**
